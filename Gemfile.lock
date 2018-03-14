@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:guy-roberts/check_list_engine.git
-  revision: 3b1aad7606928e77e56d2ce6af3278fe1333e823
+  revision: 7333134fcf7812976a65d56673dc245a2f34e01f
   specs:
     check_list_engine (0.1.0)
       fast_jsonapi (~> 1.0.17)
