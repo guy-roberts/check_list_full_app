@@ -1,151 +1,42 @@
-webpackJsonp([1,4],{
+webpackJsonp(["main"],{
 
-/***/ 228:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuditType; });
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var AuditType = (function (_super) {
-    __extends(AuditType, _super);
-    function AuditType() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    return AuditType;
-}(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__["JsonApiModel"]));
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__["Attribute"])(),
-    __metadata("design:type", String)
-], AuditType.prototype, "title", void 0);
-AuditType = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__["JsonApiModelConfig"])({
-        type: 'audit_types'
-    })
-], AuditType);
-
-//# sourceMappingURL=/Users/guy/dev/check_list/check_list_angular_ui/src/audit_type.model.js.map
-
-/***/ }),
-
-/***/ 348:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_audit_type_model__ = __webpack_require__(228);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_jsonapi__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_jsonapi___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_jsonapi__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Datastore; });
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var config = {
-    baseUrl: 'http://localhost:3000/check_list_engine/api/v1/',
-    models: {
-        audit_types: __WEBPACK_IMPORTED_MODULE_2__models_audit_type_model__["a" /* AuditType */]
-    }
-};
-var Datastore = (function (_super) {
-    __extends(Datastore, _super);
-    function Datastore(http) {
-        return _super.call(this, http) || this;
-    }
-    return Datastore;
-}(__WEBPACK_IMPORTED_MODULE_3_angular2_jsonapi__["JsonApiDatastore"]));
-Datastore = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_angular2_jsonapi__["JsonApiDatastoreConfig"])(config),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["Http"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["Http"]) === "function" && _a || Object])
-], Datastore);
-
-var _a;
-//# sourceMappingURL=/Users/guy/dev/check_list/check_list_angular_ui/src/datastore.js.map
-
-/***/ }),
-
-/***/ 454:
+/***/ "./src/$$_lazy_route_resource lazy recursive":
 /***/ (function(module, exports) {
 
-function webpackEmptyContext(req) {
-	throw new Error("Cannot find module '" + req + "'.");
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
 }
-webpackEmptyContext.keys = function() { return []; };
-webpackEmptyContext.resolve = webpackEmptyContext;
-module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 454;
-
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ 455:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./src/app/app.component.css":
+/***/ (function(module, exports) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(542);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(566);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(563);
-
-
-
-
-if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment */].production) {
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["enableProdMode"])();
-}
-__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=/Users/guy/dev/check_list/check_list_angular_ui/src/main.js.map
+module.exports = ".example-container {\n  width: 500px;\n  height: 300px;\n  border: 1px solid rgba(0, 0, 0, 0.5);\n}\n\n.example-sidenav-content {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  height: 100%;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n}\n\n.example-sidenav {\n  padding: 20px;\n  background-color: darkolivegreen;\n  color: #FFF;\n}\n\n.main-toolbar {\n  position: relative;\n  z-index: 2;\n}\n"
 
 /***/ }),
 
-/***/ 562:
+/***/ "./src/app/app.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<mat-toolbar color=\"primary\" class=\"main-toolbar\">\n  <span>{{title}}</span>\n</mat-toolbar>\n\n<mat-card>\n  <router-outlet></router-outlet>\n</mat-card>\n"
+
+/***/ }),
+
+/***/ "./src/app/app.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -158,39 +49,46 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'Audit Types';
+        this.title = 'Design a check list';
     }
     ;
+    AppComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-root',
+            template: __webpack_require__("./src/app/app.component.html"),
+            styles: [__webpack_require__("./src/app/app.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], AppComponent);
     return AppComponent;
 }());
-AppComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'app-root',
-        template: __webpack_require__(926),
-        styles: [__webpack_require__(923)]
-    }),
-    __metadata("design:paramtypes", [])
-], AppComponent);
 
-//# sourceMappingURL=/Users/guy/dev/check_list/check_list_angular_ui/src/app.component.js.map
+
 
 /***/ }),
 
-/***/ 563:
+/***/ "./src/app/app.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(533);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(562);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__audit_type_list_audit_type_list_component__ = __webpack_require__(565);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__audit_type_detail_audit_type_detail_component__ = __webpack_require__(564);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angular2_jsonapi__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angular2_jsonapi___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_angular2_jsonapi__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_datastore__ = __webpack_require__(348);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__material_module__ = __webpack_require__("./src/app/material.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser_animations__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/animations.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__("./src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__audit_type_list_audit_type_list_component__ = __webpack_require__("./src/app/audit-type-list/audit-type-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__audit_type_detail_audit_type_detail_component__ = __webpack_require__("./src/app/audit-type-detail/audit-type-detail.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__available_components_available_components_component__ = __webpack_require__("./src/app/available-components/available-components.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__page_not_found_page_not_found_component__ = __webpack_require__("./src/app/page-not-found/page-not-found.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ng2_dragula__ = __webpack_require__("./node_modules/ng2-dragula/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ng2_dragula___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_ng2_dragula__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular2_jsonapi__ = __webpack_require__("./node_modules/angular2-jsonapi/dist/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular2_jsonapi___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_angular2_jsonapi__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_datastore__ = __webpack_require__("./src/services/datastore.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__audit_type_edit_audit_type_edit_component__ = __webpack_require__("./src/app/audit-type-edit/audit-type-edit.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -206,40 +104,86 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
+
+
+
+var appRoutes = [
+    { path: 'audit_type/:id', component: __WEBPACK_IMPORTED_MODULE_8__audit_type_detail_audit_type_detail_component__["a" /* AuditTypeDetailComponent */] },
+    {
+        path: 'audit_types',
+        component: __WEBPACK_IMPORTED_MODULE_7__audit_type_list_audit_type_list_component__["a" /* AuditTypeListComponent */],
+        data: { title: 'List of Audit Types' }
+    },
+    { path: '',
+        redirectTo: '/audit_types',
+        pathMatch: 'full'
+    },
+    { path: '**', component: __WEBPACK_IMPORTED_MODULE_10__page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */] }
+];
 var AppModule = (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__audit_type_list_audit_type_list_component__["a" /* AuditTypeListComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__audit_type_detail_audit_type_detail_component__["a" /* AuditTypeDetailComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__available_components_available_components_component__["a" /* AvailableComponentsComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__audit_type_edit_audit_type_edit_component__["a" /* AuditTypeEditComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__audit_type_edit_audit_type_edit_component__["a" /* AuditTypeEditComponent */]
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormsModule */],
+                __WEBPACK_IMPORTED_MODULE_12_angular2_jsonapi__["JsonApiModule"],
+                __WEBPACK_IMPORTED_MODULE_11_ng2_dragula__["DragulaModule"],
+                __WEBPACK_IMPORTED_MODULE_4__material_module__["a" /* MaterialModule */],
+                __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+                __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* RouterModule */].forRoot(appRoutes // ,
+                // { enableTracing: true } // <-- debugging purposes only
+                )
+            ],
+            providers: [__WEBPACK_IMPORTED_MODULE_13__services_datastore__["a" /* Datastore */]],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
+        })
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
-        declarations: [
-            __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_5__audit_type_list_audit_type_list_component__["a" /* AuditTypeListComponent */],
-            __WEBPACK_IMPORTED_MODULE_6__audit_type_detail_audit_type_detail_component__["a" /* AuditTypeDetailComponent */]
-        ],
-        imports: [
-            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_http__["HttpModule"],
-            __WEBPACK_IMPORTED_MODULE_7_angular2_jsonapi__["JsonApiModule"]
-        ],
-        providers: [__WEBPACK_IMPORTED_MODULE_8__services_datastore__["a" /* Datastore */]],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
-    })
-], AppModule);
 
-//# sourceMappingURL=/Users/guy/dev/check_list/check_list_angular_ui/src/app.module.js.map
+
 
 /***/ }),
 
-/***/ 564:
+/***/ "./src/app/audit-type-detail/audit-type-detail.component.css":
+/***/ (function(module, exports) {
+
+module.exports = "span.check_list_title {\n  text-align: left;\n}\n\n.gu-mirror {\n  position: fixed !important;\n  margin: 0 !important;\n  z-index: 9999 !important;\n  opacity: 0.8;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)\";\n  filter: alpha(opacity=80);\n}\n\n.gu-hide {\n  display: none !important;\n}\n\n.gu-unselectable {\n  -webkit-user-select: none !important;\n  -moz-user-select: none !important;\n  -ms-user-select: none !important;\n  user-select: none !important;\n}\n\n.gu-transit {\n  opacity: 0.2;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)\";\n  filter: alpha(opacity=20);\n}\n\nul.container {\n  margin: 0;\n  padding: 0;\n}\n\n.ex-moved {\n  border-right: 10px solid #2196F3;\n}\n\n"
+
+/***/ }),
+
+/***/ "./src/app/audit-type-detail/audit-type-detail.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div *ngIf=\"audit_type\">\n  <mat-card-title>\n    <mat-grid-list cols=\"2\" rowHeight=\"100px\">\n      <mat-grid-tile><span class=\"check_list_title\">{{ audit_type.title }}</span></mat-grid-tile>\n      <mat-grid-tile>\n        <div class=\"button-row\">\n            <button mat-raised-button color=\"accent\" routerLink=\"/audit_types\">Add</button>\n            <button mat-raised-button color=\"primary\" routerLink=\"/audit_types\">Back</button>\n            <button mat-raised-button color=\"primary\" (click)=\"saveChanges()\">Save</button>\n        </div>\n      </mat-grid-tile>\n    </mat-grid-list>\n  </mat-card-title>\n\n  <ul class='container' [dragula]='component-bag' >\n      <li *ngFor=\"let component of audit_type.audit_type_components\" dragula-model=\"audit_type.audit_type_components\">\n        <app-audit-type-edit [audit_type_component]=component></app-audit-type-edit>\n      </li>\n  </ul>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/audit-type-detail/audit-type-detail.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_audit_type_model__ = __webpack_require__(228);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuditTypeDetailComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_audit_type_model__ = __webpack_require__("./src/models/audit_type.model.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_datastore__ = __webpack_require__("./src/services/datastore.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_dragula__ = __webpack_require__("./node_modules/ng2-dragula/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_dragula___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_ng2_dragula__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -251,39 +195,250 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
+
 var AuditTypeDetailComponent = (function () {
-    function AuditTypeDetailComponent() {
+    function AuditTypeDetailComponent(datastore, route, dragulaService) {
+        this.datastore = datastore;
+        this.dragulaService = dragulaService;
+        this.audit_type_id = route.snapshot.params['id'];
+        this.route = route;
+        this.dragularService = dragulaService;
     }
     AuditTypeDetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        // Get the id from the route, fetch the info about this audit_type
+        this.getAuditType(this.audit_type_id);
+        this.dragulaService.drag.subscribe(function (value) {
+            _this.onDrag(value.slice(1));
+        });
+        this.dragulaService.drop.subscribe(function (value) {
+            _this.onDrop(value.slice(1));
+        });
+        this.dragulaService.over.subscribe(function (value) {
+            _this.onOver(value.slice(1));
+        });
+        this.dragulaService.out.subscribe(function (value) {
+            _this.onOut(value.slice(1));
+        });
     };
+    AuditTypeDetailComponent.prototype.ngOnDestroy = function () {
+        // this.dragulaService.destroy('component-bag');
+    };
+    AuditTypeDetailComponent.prototype.getAuditType = function (id) {
+        var _this = this;
+        this.datastore.findRecord(__WEBPACK_IMPORTED_MODULE_0__models_audit_type_model__["a" /* AuditType */], id, { include: 'audit_type_components', sort: 'position' }).subscribe(function (audit_type) {
+            _this.audit_type = audit_type;
+            // Sort by position
+            _this.audit_type.audit_type_components = _this.audit_type.audit_type_components.sort(function (a, b) {
+                if (a.position < b.position) {
+                    return -1;
+                }
+                else if (a.position > b.position) {
+                    return 1;
+                }
+                else {
+                    return 0;
+                }
+            });
+            _this.dragulaService.setOptions(('component_bag'), {
+                moves: function (el, container, handle) {
+                    return handle.className === 'handle';
+                }
+            });
+        });
+    };
+    AuditTypeDetailComponent.prototype.saveChanges = function () {
+        // Are changes to the audit_type_component titles here ?
+    };
+    AuditTypeDetailComponent.prototype.reorderComponents = function () {
+        // Get all the ids of lis under the ul
+        /*
+        for (let i in this.audit_type.audit_type_components) {
+          if (this.audit_type.audit_type_components[i].position !== (Number(i) + 1).toString) {
+            this.audit_type.audit_type_components[i].position = (Number(i) + 1).toString;
+            this.audit_type.audit_type_components[i].save().subscribe(
+              (result: any) => {
+                alert('Saved ' + result.title + ' to position' + result.position);
+              },
+              (result: any) => {
+                alert('Failed to save a position');
+              }
+            );
+          }
+        }
+        */
+    };
+    // Dragular functions to show which element has moved
+    AuditTypeDetailComponent.prototype.hasClass = function (el, name) {
+        return new RegExp('(?:^|\\s+)' + name + '(?:\\s+|$)').test(el.className);
+    };
+    AuditTypeDetailComponent.prototype.addClass = function (el, name) {
+        if (!this.hasClass(el, name)) {
+            el.className = el.className ? [el.className, name].join(' ') : name;
+        }
+    };
+    AuditTypeDetailComponent.prototype.removeClass = function (el, name) {
+        if (this.hasClass(el, name)) {
+            el.className = el.className.replace(new RegExp('(?:^|\\s+)' + name + '(?:\\s+|$)', 'g'), '');
+        }
+    };
+    AuditTypeDetailComponent.prototype.onDrag = function (args) {
+        var e = args[0], el = args[1];
+        this.removeClass(e, 'ex-moved');
+    };
+    AuditTypeDetailComponent.prototype.onDrop = function (args) {
+        var e = args[0], el = args[1];
+        this.addClass(e, 'ex-moved');
+        this.reorderComponents();
+    };
+    AuditTypeDetailComponent.prototype.onOver = function (args) {
+        var e = args[0], el = args[1], container = args[2];
+        this.addClass(el, 'ex-over');
+    };
+    AuditTypeDetailComponent.prototype.onOut = function (args) {
+        var e = args[0], el = args[1], container = args[2];
+        this.removeClass(el, 'ex-over');
+    };
+    AuditTypeDetailComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
+            selector: 'app-audit-type-detail',
+            template: __webpack_require__("./src/app/audit-type-detail/audit-type-detail.component.html"),
+            styles: [__webpack_require__("./src/app/audit-type-detail/audit-type-detail.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_datastore__["a" /* Datastore */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_4_ng2_dragula__["DragulaService"]])
+    ], AuditTypeDetailComponent);
     return AuditTypeDetailComponent;
 }());
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Input"])(),
-    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__models_audit_type_model__["a" /* AuditType */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__models_audit_type_model__["a" /* AuditType */]) === "function" && _a || Object)
-], AuditTypeDetailComponent.prototype, "audit_type", void 0);
-AuditTypeDetailComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
-        selector: 'app-audit-type-detail',
-        template: __webpack_require__(927),
-        styles: [__webpack_require__(924)]
-    }),
-    __metadata("design:paramtypes", [])
-], AuditTypeDetailComponent);
 
-var _a;
-//# sourceMappingURL=/Users/guy/dev/check_list/check_list_angular_ui/src/audit-type-detail.component.js.map
+
 
 /***/ }),
 
-/***/ 565:
+/***/ "./src/app/audit-type-edit/audit-type-edit.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ".audit_type_component_edit {\n  text-align: left;\n  padding: 1em;\n  border: 1px solid #666;\n}\n\nform.component-form div {\n  margin-right: 2em;\n}\n\n.example-container {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n\n.example-container > * {\n  width: 100%;\n}\n\n.button-row {\n  text-align: right;\n}\n\nfigure.mat-figure div {\n  margin: 0;\n  padding: 0;\n}\n\n.mat-grid-tile {\n  margin: 0;\n  padding: 0;\n}\n\n/* A clunky way to left align contents of the grid */\n\n.text-inside-grid {\n  position: absolute;\n  left: 2em;\n}\n\n.component-icon {\n  font-size: 200%;\n  color: #2196F3;\n}\n\n.alert {\n  color: red;\n}\n\n.in-edit-mode {\n  background-color: #E3F2FD;\n  padding: 1em;\n}\n"
+
+/***/ }),
+
+/***/ "./src/app/audit-type-edit/audit-type-edit.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"audit_type_component_edit\" >\n\n  <mat-grid-list *ngIf=\"!inEditMode\" cols=\"10\" rowHeight=\"3em\">\n    <mat-grid-tile colspan=\"1\">\n      <mat-icon class=\"component-icon\">{{iconName()}}</mat-icon>\n    </mat-grid-tile>\n    <mat-grid-tile colspan=\"6\">\n      <div class=\"text-inside-grid\">\n        <h3>{{audit_type_component.title}}</h3>\n        <p>{{audit_type_component.help_text}}</p>\n      </div>\n    </mat-grid-tile>\n    <mat-grid-tile colspan=\"2\">\n      <button mat-icon-button *ngIf=\"!inEditMode\" (click)=\"startEditing()\">\n        <mat-icon aria-label=\"Edit this component\">edit</mat-icon>\n      </button>\n      <button mat-icon-button *ngIf=\"!inEditMode\" (click)=\"startEditing()\">\n        <mat-icon aria-label=\"Edit this component\">pan</mat-icon>\n      </button>\n    </mat-grid-tile>\n  </mat-grid-list>\n\n  <form class=\"componentForm\"  #componentForm=\"ngForm\" *ngIf=\"inEditMode\" name=\"componentForm\" class=\"component-form in-edit-mode example-container\" novalidate (ngSubmit)=\"saveComponentChanges(audit_type_component)\">\n\n    <mat-form-field>\n      <input matInput placeholder=\"Title\" value=\"{{audit_type_component.title}}\" name=\"title\" [(ngModel)]=\"audit_type_component.title\" required #name=\"ngModel\">\n      <div [hidden]=\"name.valid || name.pristine\"\n           class=\"alert alert-danger\">\n        Title is required\n      </div>\n    </mat-form-field>\n    <mat-form-field *ngIf=\"showChoices()\">\n      <input matInput placeholder=\"Choices\" value=\"{{audit_type_component.choices}}\" name=\"choices\" [(ngModel)]=\"audit_type_component.choices\">\n    </mat-form-field>\n    <mat-form-field>\n      <textarea matInput placeholder=\"Help text\" value=\"{{audit_type_component.help_text}}\"  name=\"help_text\" [(ngModel)]=\"audit_type_component.help_text\" required></textarea>\n    </mat-form-field>\n\n    <section>\n      <label>Is mandatory ? </label>\n      <mat-checkbox  name=\"is_mandatory\" [(ngModel)]=\"audit_type_component.is_mandatory\"></mat-checkbox>\n\n      <div class=\"button-row\">\n        <button type=\"submit\" mat-raised-button [disabled]=\"!componentForm.form.valid\">Save</button>\n        <button mat-raised-button (click)=\"cancel()\">Cancel</button>\n      </div>\n\n    </section>\n  </form>\n\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/audit-type-edit/audit-type-edit.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_datastore__ = __webpack_require__(348);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_audit_type_model__ = __webpack_require__(228);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuditTypeEditComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_audit_type_component_model__ = __webpack_require__("./src/models/audit_type_component.model.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AuditTypeEditComponent = (function () {
+    function AuditTypeEditComponent() {
+    }
+    AuditTypeEditComponent.prototype.ngOnInit = function () {
+        this.inEditMode = false;
+    };
+    AuditTypeEditComponent.prototype.startEditing = function () {
+        this.inEditMode = true;
+    };
+    AuditTypeEditComponent.prototype.cancel = function () {
+        this.inEditMode = false;
+    };
+    AuditTypeEditComponent.prototype.iconName = function () {
+        switch (this.audit_type_component.name_of_component_type) {
+            case 'Title':
+                return 'payment';
+            case 'Choices':
+                return 'list';
+            case 'Text':
+                return 'subject';
+            case 'Date':
+                return 'today';
+            case 'Signature':
+                return 'gesture';
+            case 'Photo':
+                return 'camera';
+            case 'Address':
+                return 'place';
+            case 'Yes / No':
+                return 'hdr-strong';
+            default:
+                return 'payment';
+        }
+    };
+    AuditTypeEditComponent.prototype.showChoices = function () {
+        if (this.audit_type_component.name_of_component_type === 'Choices') {
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
+    AuditTypeEditComponent.prototype.saveComponentChanges = function (component) {
+        var _this = this;
+        component.save().subscribe(function (result) {
+            _this.inEditMode = false;
+        }, function (result) {
+            alert('Failed to save an AuditType');
+        });
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Input"])(),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__models_audit_type_component_model__["a" /* AuditTypeComponent */])
+    ], AuditTypeEditComponent.prototype, "audit_type_component", void 0);
+    AuditTypeEditComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
+            selector: 'app-audit-type-edit',
+            template: __webpack_require__("./src/app/audit-type-edit/audit-type-edit.component.html"),
+            styles: [__webpack_require__("./src/app/audit-type-edit/audit-type-edit.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], AuditTypeEditComponent);
+    return AuditTypeEditComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/audit-type-list/audit-type-list.component.css":
+/***/ (function(module, exports) {
+
+module.exports = "ul, ul li {\n  font-size: 100%;\n  color: red;\n}\n\nh2 {\n  text-align: left;\n}\n"
+
+/***/ }),
+
+/***/ "./src/app/audit-type-list/audit-type-list.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h2>\n  Check List designs\n</h2>\n\n<mat-list>\n  <mat-list-item *ngFor=\"let audit_type of audit_types\" >\n    <button mat-button routerLink=\"/audit_type/{{audit_type.id}}\">{{audit_type.title}}</button>\n  </mat-list-item>\n</mat-list>\n\n<router-outlet></router-outlet>\n\n\n\n\n\n"
+
+/***/ }),
+
+/***/ "./src/app/audit-type-list/audit-type-list.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuditTypeListComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_datastore__ = __webpack_require__("./src/services/datastore.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_audit_type_model__ = __webpack_require__("./src/models/audit_type.model.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -309,31 +464,199 @@ var AuditTypeListComponent = (function () {
     AuditTypeListComponent.prototype.getAuditTypes = function () {
         var _this = this;
         this.datastore.findAll(__WEBPACK_IMPORTED_MODULE_2__models_audit_type_model__["a" /* AuditType */], {
-            page: { size: 10, number: 1 },
-            filter: {
-                title: 'My Audit',
-            },
+            include: 'audit_type_components'
         }).subscribe(function (audit_types) {
             _this.audit_types = audit_types.getModels();
         });
     };
+    AuditTypeListComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-audit-type-list',
+            template: __webpack_require__("./src/app/audit-type-list/audit-type-list.component.html"),
+            styles: [__webpack_require__("./src/app/audit-type-list/audit-type-list.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_datastore__["a" /* Datastore */]])
+    ], AuditTypeListComponent);
     return AuditTypeListComponent;
 }());
-AuditTypeListComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'app-audit-type-list',
-        template: __webpack_require__(928),
-        styles: [__webpack_require__(925)]
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_datastore__["a" /* Datastore */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_datastore__["a" /* Datastore */]) === "function" && _a || Object])
-], AuditTypeListComponent);
 
-var _a;
-//# sourceMappingURL=/Users/guy/dev/check_list/check_list_angular_ui/src/audit-type-list.component.js.map
+
 
 /***/ }),
 
-/***/ 566:
+/***/ "./src/app/available-components/available-components.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ".gu-mirror {\n  position: fixed !important;\n  margin: 0 !important;\n  z-index: 9999 !important;\n  opacity: 0.8;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)\";\n  filter: alpha(opacity=80);\n}\n.gu-hide {\n  display: none !important;\n}\n.gu-unselectable {\n  -webkit-user-select: none !important;\n  -moz-user-select: none !important;\n  -ms-user-select: none !important;\n  user-select: none !important;\n}\n.gu-transit {\n  opacity: 0.2;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)\";\n  filter: alpha(opacity=20);\n}\n"
+
+/***/ }),
+
+/***/ "./src/app/available-components/available-components.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h2>Available Components</h2>\n\n<div>\n  <div class='wrapper'>\n    <div class='container' [dragula]='\"some-bag\"'>\n      <div *ngFor=\"let available_component of available_components\">\n          {{available_component.title}}\n      </div>\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/available-components/available-components.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AvailableComponentsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_audit_type_model__ = __webpack_require__("./src/models/audit_type.model.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_datastore__ = __webpack_require__("./src/services/datastore.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AvailableComponentsComponent = (function () {
+    function AvailableComponentsComponent(datastore) {
+        this.datastore = datastore;
+    }
+    AvailableComponentsComponent.prototype.ngOnInit = function () {
+        this.getAvailableComponents();
+    };
+    AvailableComponentsComponent.prototype.getAvailableComponents = function () {
+        var _this = this;
+        this.datastore.findAll(__WEBPACK_IMPORTED_MODULE_1__models_audit_type_model__["b" /* AvailableComponents */], {
+            page: { size: 10, number: 1 },
+            filter: {
+                title: 'Bla Bla',
+            },
+        }).subscribe(function (available_components) {
+            _this.available_components = available_components.getModels();
+        });
+    };
+    AvailableComponentsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-available-components',
+            template: __webpack_require__("./src/app/available-components/available-components.component.html"),
+            styles: [__webpack_require__("./src/app/available-components/available-components.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_datastore__["a" /* Datastore */]])
+    ], AvailableComponentsComponent);
+    return AvailableComponentsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/material.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MaterialModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__("./node_modules/@angular/material/esm5/material.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var MaterialModule = (function () {
+    function MaterialModule() {
+    }
+    MaterialModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["a" /* MatButtonModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["i" /* MatMenuModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["k" /* MatToolbarModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["f" /* MatIconModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["b" /* MatCardModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["h" /* MatListModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["j" /* MatSidenavModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["e" /* MatGridListModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["g" /* MatInputModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["c" /* MatCheckboxModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["d" /* MatExpansionModule */]
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["a" /* MatButtonModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["i" /* MatMenuModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["k" /* MatToolbarModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["f" /* MatIconModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["b" /* MatCardModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["h" /* MatListModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["j" /* MatSidenavModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["e" /* MatGridListModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["g" /* MatInputModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["c" /* MatCheckboxModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_material__["d" /* MatExpansionModule */]
+            ]
+        })
+    ], MaterialModule);
+    return MaterialModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/page-not-found/page-not-found.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/page-not-found/page-not-found.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  Page not found\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/page-not-found/page-not-found.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PageNotFoundComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PageNotFoundComponent = (function () {
+    function PageNotFoundComponent() {
+    }
+    PageNotFoundComponent.prototype.ngOnInit = function () {
+    };
+    PageNotFoundComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-page-not-found',
+            template: __webpack_require__("./src/app/page-not-found/page-not-found.component.html"),
+            styles: [__webpack_require__("./src/app/page-not-found/page-not-found.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], PageNotFoundComponent);
+    return PageNotFoundComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/environments/environment.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -342,63 +665,240 @@ var _a;
 // The build system defaults to the dev environment which uses `environment.ts`, but if you do
 // `ng build --env=prod` then `environment.prod.ts` will be used instead.
 // The list of which env maps to which file can be found in `angular-cli.json`.
-// The file contents for the current environment will overwrite these during build.
 var environment = {
     production: false
 };
-//# sourceMappingURL=/Users/guy/dev/check_list/check_list_angular_ui/src/environment.js.map
+
 
 /***/ }),
 
-/***/ 923:
-/***/ (function(module, exports) {
+/***/ "./src/main.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = ""
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__("./node_modules/@angular/platform-browser-dynamic/esm5/platform-browser-dynamic.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__("./src/environments/environment.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__("./src/app/app.module.ts");
 
-/***/ }),
 
-/***/ 924:
-/***/ (function(module, exports) {
 
-module.exports = ""
 
-/***/ }),
+if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment */].production) {
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["enableProdMode"])();
+}
+Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
 
-/***/ 925:
-/***/ (function(module, exports) {
-
-module.exports = "ul, ul li {\n  font-size: 100%;\n  color: red;\n}\n"
-
-/***/ }),
-
-/***/ 926:
-/***/ (function(module, exports) {
-
-module.exports = "<h1>\n  {{title}}\n</h1>\n\n<app-audit-type-list></app-audit-type-list>\n\n<hr/>\n\n"
 
 /***/ }),
 
-/***/ 927:
-/***/ (function(module, exports) {
+/***/ "./src/models/audit_type.model.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "<div *ngIf=\"audit_type\">\n\n  <h2>{{ audit_type.title | uppercase }} Details</h2>\n  <div>\n    <label>Title:\n      <input [(ngModel)]=\"audit_type.title\" placeholder=\"title\"/>\n    </label>\n  </div>\n\n</div>\n"
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuditType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return AvailableComponents; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__ = __webpack_require__("./node_modules/angular2-jsonapi/dist/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AuditType = (function (_super) {
+    __extends(AuditType, _super);
+    function AuditType() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__["Attribute"])(),
+        __metadata("design:type", String)
+    ], AuditType.prototype, "title", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__["HasMany"])(),
+        __metadata("design:type", Array)
+    ], AuditType.prototype, "audit_type_components", void 0);
+    AuditType = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__["JsonApiModelConfig"])({
+            type: 'audit_types'
+        })
+    ], AuditType);
+    return AuditType;
+}(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__["JsonApiModel"]));
+
+var AvailableComponents = (function (_super) {
+    __extends(AvailableComponents, _super);
+    function AvailableComponents() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__["Attribute"])(),
+        __metadata("design:type", String)
+    ], AvailableComponents.prototype, "title", void 0);
+    AvailableComponents = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__["JsonApiModelConfig"])({
+            type: 'available_components'
+        })
+    ], AvailableComponents);
+    return AvailableComponents;
+}(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__["JsonApiModel"]));
+
+
 
 /***/ }),
 
-/***/ 928:
-/***/ (function(module, exports) {
+/***/ "./src/models/audit_type_component.model.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "<p>\n  These are the Audit Types\n</p>\n\n<ul>\n  <li *ngFor=\"let audit_type of audit_types\"\n    [class.selected]=\"audit_type === selectedAuditType\"\n    (click)=\"onSelect(audit_type)\">\n\n    <span class=\"badge\">{{audit_type.id}}</span> {{audit_type.title}}\n  </li>\n</ul>\n\n\n<app-audit-type-detail [audit_type]=\"selectedAuditType\"></app-audit-type-detail>\n"
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuditTypeComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__ = __webpack_require__("./node_modules/angular2-jsonapi/dist/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__audit_type_model__ = __webpack_require__("./src/models/audit_type.model.ts");
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AuditTypeComponent = (function (_super) {
+    __extends(AuditTypeComponent, _super);
+    function AuditTypeComponent() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__["Attribute"])(),
+        __metadata("design:type", String)
+    ], AuditTypeComponent.prototype, "title", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__["Attribute"])(),
+        __metadata("design:type", String)
+    ], AuditTypeComponent.prototype, "help_text", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__["Attribute"])(),
+        __metadata("design:type", String)
+    ], AuditTypeComponent.prototype, "choices", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__["Attribute"])(),
+        __metadata("design:type", Boolean)
+    ], AuditTypeComponent.prototype, "has_image", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__["Attribute"])(),
+        __metadata("design:type", Boolean)
+    ], AuditTypeComponent.prototype, "is_mandatory", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__["BelongsTo"])(),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__audit_type_model__["a" /* AuditType */])
+    ], AuditTypeComponent.prototype, "audit_type", void 0);
+    AuditTypeComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__["JsonApiModelConfig"])({
+            type: 'audit_type_components'
+        })
+    ], AuditTypeComponent);
+    return AuditTypeComponent;
+}(__WEBPACK_IMPORTED_MODULE_0_angular2_jsonapi__["JsonApiModel"]));
+
+
 
 /***/ }),
 
-/***/ 964:
+/***/ "./src/services/datastore.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Datastore; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_audit_type_model__ = __webpack_require__("./src/models/audit_type.model.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_audit_type_component_model__ = __webpack_require__("./src/models/audit_type_component.model.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular2_jsonapi__ = __webpack_require__("./node_modules/angular2-jsonapi/dist/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular2_jsonapi___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_angular2_jsonapi__);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var config = {
+    baseUrl: 'http://localhost:3000/check_list_engine/api/',
+    models: {
+        audit_type: __WEBPACK_IMPORTED_MODULE_2__models_audit_type_model__["a" /* AuditType */],
+        audit_type_components: __WEBPACK_IMPORTED_MODULE_3__models_audit_type_component_model__["a" /* AuditTypeComponent */]
+    }
+};
+var Datastore = (function (_super) {
+    __extends(Datastore, _super);
+    function Datastore(http) {
+        return _super.call(this, http) || this;
+    }
+    Datastore = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+        Object(__WEBPACK_IMPORTED_MODULE_4_angular2_jsonapi__["JsonApiDatastoreConfig"])(config),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["Http"]])
+    ], Datastore);
+    return Datastore;
+}(__WEBPACK_IMPORTED_MODULE_4_angular2_jsonapi__["JsonApiDatastore"]));
+
+
+
+/***/ }),
+
+/***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(455);
+module.exports = __webpack_require__("./src/main.ts");
 
 
 /***/ })
 
-},[964]);
-//# sourceMappingURL=main.bundle.map
+},[0]);
+//# sourceMappingURL=main.bundle.js.map
