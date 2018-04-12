@@ -13,7 +13,7 @@ to provide a drag and drop user interface.
 
 ## Screenshot
 
-<img align="left"  src="https://github.com/guy-roberts/check_list_full_app/images/Screenshot.png">
+<img align="left"  src="https://github.com/guy-roberts/check_list_full_app/blob/master/images/Screenshot.png">
 
 
 ## To install
