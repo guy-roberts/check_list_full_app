@@ -1,25 +1,33 @@
-# README
+# An app using JSONAPI::Resources (ruby) with angular2-jsonapi (Typescript)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Rails app is a demonstration of using JSON API adaptors in separate server and client
+components.  It is described in this[blog post](http://blog.guyroberts.co.uk/app-designing-mobile-audits-check-lists/).
 
-Things you may want to cover:
 
-* Ruby version
+It uses a[Rails Engine](https://github.com/guy-roberts/check_list_engine)that provides
+a JSON API to help assemble templates for check lists. 
 
-* System dependencies
+For the front end it uses an[Angular 2 UI](https://github.com/guy-roberts/check_list_angular_ui)
+to provide a drag and drop user interface.
 
-* Configuration
 
-* Database creation
+## Screenshot
 
-* Database initialization
+<img align="left"  src="https://github.com/guy-roberts/check_list_full_app/images/Screenshot.png">
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## To install
 
-* Deployment instructions
-
-* ...
-# check_list_full_app
+* git clone git@github.com:guy-roberts/check_list_full_app.git
+ 
+* cd check_list_full_app
+ 
+* bundle install
+ 
+* rake db:setup
+ 
+* Create some seed data
+ 
+* rake check_list_engine:create_audit_data
+ 
+* rails s
