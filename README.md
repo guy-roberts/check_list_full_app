@@ -1,4 +1,4 @@
-# An app using JSONAPI::Resources (ruby) with angular2-jsonapi (Typescript)
+# An app using JSONAPI::Resources (ruby) with angular2-jsonapi (Typescript) 
 
 This Rails app is a demonstration of using JSON API adaptors in separate server and client
 components.  It is described in this [blog post](http://blog.guyroberts.co.uk/app-designing-mobile-audits-check-lists/).
