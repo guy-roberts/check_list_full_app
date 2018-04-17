@@ -2,6 +2,10 @@
 JSONAPI.configure do |config|
   config.default_paginator = :paged
 
+  config.allow_include = true
+  config.allow_sort = true
+  config.allow_filter = true
+
   config.top_level_links_include_pagination = true
 
   config.default_page_size = 10
