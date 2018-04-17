@@ -82,14 +82,14 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__("./src/app/app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__audit_type_list_audit_type_list_component__ = __webpack_require__("./src/app/audit-type-list/audit-type-list.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__audit_type_detail_audit_type_detail_component__ = __webpack_require__("./src/app/audit-type-detail/audit-type-detail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__available_components_available_components_component__ = __webpack_require__("./src/app/available-components/available-components.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__page_not_found_page_not_found_component__ = __webpack_require__("./src/app/page-not-found/page-not-found.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_ng2_dragula__ = __webpack_require__("./node_modules/ng2-dragula/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_ng2_dragula___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_ng2_dragula__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_angular2_jsonapi__ = __webpack_require__("./node_modules/angular2-jsonapi/dist/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_angular2_jsonapi___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_angular2_jsonapi__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_datastore__ = __webpack_require__("./src/services/datastore.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__audit_type_edit_audit_type_edit_component__ = __webpack_require__("./src/app/audit-type-edit/audit-type-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__page_not_found_page_not_found_component__ = __webpack_require__("./src/app/page-not-found/page-not-found.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ng2_dragula__ = __webpack_require__("./node_modules/ng2-dragula/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ng2_dragula___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_ng2_dragula__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular2_jsonapi__ = __webpack_require__("./node_modules/angular2-jsonapi/dist/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular2_jsonapi___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_angular2_jsonapi__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_datastore__ = __webpack_require__("./src/services/datastore.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__audit_type_edit_audit_type_edit_component__ = __webpack_require__("./src/app/audit-type-edit/audit-type-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__audit_type_new_audit_type_new_component__ = __webpack_require__("./src/app/audit-type-new/audit-type-new.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -119,11 +119,16 @@ var appRoutes = [
         component: __WEBPACK_IMPORTED_MODULE_8__audit_type_list_audit_type_list_component__["a" /* AuditTypeListComponent */],
         data: { title: 'List of Audit Types' }
     },
+    {
+        path: 'audit_types/new',
+        component: __WEBPACK_IMPORTED_MODULE_15__audit_type_new_audit_type_new_component__["a" /* AuditTypeNewComponent */],
+        data: { title: 'New Audit Type' }
+    },
     { path: '',
         redirectTo: '/audit_types',
         pathMatch: 'full'
     },
-    { path: '**', component: __WEBPACK_IMPORTED_MODULE_11__page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */] }
+    { path: '**', component: __WEBPACK_IMPORTED_MODULE_10__page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */] }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -134,24 +139,24 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_8__audit_type_list_audit_type_list_component__["a" /* AuditTypeListComponent */],
                 __WEBPACK_IMPORTED_MODULE_9__audit_type_detail_audit_type_detail_component__["a" /* AuditTypeDetailComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__available_components_available_components_component__["a" /* AvailableComponentsComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__audit_type_edit_audit_type_edit_component__["a" /* AuditTypeEditComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__audit_type_edit_audit_type_edit_component__["a" /* AuditTypeEditComponent */]
+                __WEBPACK_IMPORTED_MODULE_14__audit_type_edit_audit_type_edit_component__["a" /* AuditTypeEditComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__audit_type_edit_audit_type_edit_component__["a" /* AuditTypeEditComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__audit_type_new_audit_type_new_component__["a" /* AuditTypeNewComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormsModule */],
-                __WEBPACK_IMPORTED_MODULE_13_angular2_jsonapi__["JsonApiModule"],
-                __WEBPACK_IMPORTED_MODULE_12_ng2_dragula__["DragulaModule"],
+                __WEBPACK_IMPORTED_MODULE_12_angular2_jsonapi__["JsonApiModule"],
+                __WEBPACK_IMPORTED_MODULE_11_ng2_dragula__["DragulaModule"],
                 __WEBPACK_IMPORTED_MODULE_4__material_module__["a" /* MaterialModule */],
                 __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
                 __WEBPACK_IMPORTED_MODULE_6__angular_flex_layout__["a" /* FlexLayoutModule */],
-                __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* RouterModule */].forRoot(appRoutes // ,
+                __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* RouterModule */].forRoot(appRoutes // ,
                 // { enableTracing: true } // <-- debugging purposes only
                 )
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_14__services_datastore__["a" /* Datastore */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_13__services_datastore__["a" /* Datastore */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -165,14 +170,14 @@ var AppModule = (function () {
 /***/ "./src/app/audit-type-detail/audit-type-detail.component.css":
 /***/ (function(module, exports) {
 
-module.exports = "\n.gu-mirror {\n  position: fixed !important;\n  margin: 0 !important;\n  z-index: 9999 !important;\n  opacity: 0.8;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)\";\n  filter: alpha(opacity=80);\n}\n.gu-hide {\n  display: none !important;\n}\n.gu-unselectable {\n  -webkit-user-select: none !important;\n  -moz-user-select: none !important;\n  -ms-user-select: none !important;\n  user-select: none !important;\n}\n.gu-transit {\n  opacity: 0.2;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)\";\n  filter: alpha(opacity=20);\n}\nul.container {\n  margin: 0;\n  padding: 0;\n}\n.ex-moved {\n  border-right: 3px solid orangered;\n}\n.ex-over {\n  color: dodgerblue;\n}\n.available_component_types {\n  text-align: left;\n  padding-left: 2em;\n}\n.dragthing {\n  list-style: none;\n}\n.dragthing mat-icon {\n}\n.dragthing p {\n  display: inline;\n  padding-left: 0.25em;\n  color: dodgerblue;\n}\np {\n  color: dodgerblue;\n  text-align: left;\n  padding-top: 0;\n  margin-top: 0;\n}\nmat-grid-tile > figure.mat-figure {\n  -webkit-box-pack: start !important;\n      -ms-flex-pack: start !important;\n          justify-content: flex-start !important;\n  color: purple;\n}\nul.destination {\n  border-left: 1px dotted dodgerblue;\n}\n.mat-grid-tile .mat-figure {\n  color: orange;\n  -webkit-box-pack: start !important;\n      -ms-flex-pack: start !important;\n          justify-content: flex-start !important;\n}\n.check_list_title  {\n  text-align: left;\n  position: absolute;\n  left: 5px;\n  color: dodgerblue;\n}\n"
+module.exports = ".gu-mirror {\n  position: fixed !important;\n  margin: 0 !important;\n  z-index: 9999 !important;\n  opacity: 0.8;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)\";\n  filter: alpha(opacity=80);\n}\n.gu-hide {\n  display: none !important;\n}\n.gu-unselectable {\n  -webkit-user-select: none !important;\n  -moz-user-select: none !important;\n  -ms-user-select: none !important;\n  user-select: none !important;\n}\n.gu-transit {\n  opacity: 0.2;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)\";\n  filter: alpha(opacity=20);\n}\nul.container {\n  margin: 0;\n  padding: 0;\n}\n.ex-moved {\n  border-left: 3px solid orangered;\n}\n.ex-over {\n  color: dodgerblue;\n}\n.dragthing {\n  list-style: none;\n}\n.dragthing mat-icon {\n}\n.dragthing p {\n  display: inline;\n  padding-left: 0.25em;\n  color: dodgerblue;\n}\np {\n  color: dodgerblue;\n  text-align: left;\n  padding-top: 0;\n  margin-top: 0;\n}\nmat-grid-tile > figure.mat-figure {\n  -webkit-box-pack: start !important;\n      -ms-flex-pack: start !important;\n          justify-content: flex-start !important;\n  color: purple;\n}\n.mat-grid-tile .mat-figure {\n  color: orange;\n  -webkit-box-pack: start !important;\n      -ms-flex-pack: start !important;\n          justify-content: flex-start !important;\n}\n.check_list_title  {\n  text-align: left;\n  position: absolute;\n  left: 5px;\n  color: dodgerblue;\n}\n/* A clunky way to left align contents of the grid */\n.text-inside-grid {\n  position: absolute;\n  left: 1em;\n}\n.available_component_types {\n  text-align: left;\n  color: dodgerblue;\n  border-right: 1px dotted dodgerblue;\n  margin-right: 2em;\n  padding-left: 2em;\n\n}\n.available_component_types li {\n  padding-top: 1.1em;\n}\n.destination {\n  min-height: 5em;\n}\n"
 
 /***/ }),
 
 /***/ "./src/app/audit-type-detail/audit-type-detail.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<mat-grid-list cols=\"2\" rowHeight=\"100px\" class=\"dom\">\n  <mat-grid-tile>\n    <div *ngIf=\"audit_type\" class=\"check_list_title\">\n      <h2>{{ audit_type.title }}</h2>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <div class=\"button-row\">\n      <button mat-raised-button color=\"accent\" routerLink=\"/audit_types\">Add</button>\n      <button mat-raised-button color=\"primary\" routerLink=\"/audit_types\">Back</button>\n      <button mat-raised-button color=\"primary\" (click)=\"saveChanges()\">Save</button>\n    </div>\n  </mat-grid-tile>\n</mat-grid-list>\n\n\n<div class=\"container\" fxLayout=\"row\" fxLayout.xs=\"column\" fxLayoutWrap fxLayoutGap=\"0.5%\" fxLayoutAlign=\"center\">\n\n  <div fxFlex=\"20%\">\n    <p>Drag items from this list over to the report on the right</p>\n    <ul class='container available_component_types ' dragula='basket' [dragulaModel]=\"available_component_types\">\n      <li *ngFor=\"let available_component_type of available_component_types\" class=\"dragthing\">\n        <p>\n          <mat-icon class=\"component-icon\">{{datastore.iconName(available_component_type.title)}}</mat-icon>\n        </p>\n        <p>{{available_component_type.title}}</p>\n      </li>\n    </ul>\n  </div>\n\n  <div *ngIf=\"audit_type\" fxFlex=\"80%\">\n    <ul class='container destination'  dragula='basket' [dragulaModel]=\"audit_type.audit_type_components\" >\n      <li *ngFor=\"let component of audit_type.audit_type_components\" class=\"dragthing\">\n        <app-audit-type-edit [audit_type_component]=component></app-audit-type-edit>\n      </li>\n    </ul>\n  </div>\n\n</div>\n\n\n"
+module.exports = "<mat-grid-list cols=\"2\" rowHeight=\"100px\" class=\"dom\">\n  <mat-grid-tile>\n    <div *ngIf=\"audit_type\" class=\"check_list_title\">\n      <h2>{{ audit_type.title }}</h2>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <div class=\"button-row\">\n      <button mat-raised-button color=\"primary\" routerLink=\"/audit_types\">Back</button>\n      <button mat-raised-button color=\"primary\" (click)=\"saveChanges()\">Save</button>\n    </div>\n  </mat-grid-tile>\n</mat-grid-list>\n\n\n<div class=\"container\" fxLayout=\"row\" fxLayout.xs=\"column\" fxLayoutWrap fxLayoutGap=\"0.5%\" fxLayoutAlign=\"center\">\n\n  <div fxFlex=\"20%\">\n    <p>Drag items from this list over to the report on the right</p>\n    <ul class='container available_component_types ' dragula='basket' [dragulaModel]=\"available_component_types\">\n      <li *ngFor=\"let available_component_type of available_component_types\" class=\"dragthing\">\n        <mat-grid-list cols=\"4\" rowHeight=\"1.2em\">\n          <mat-grid-tile colspan=\"1\">\n            <mat-icon class=\"component-icon\">{{datastore.iconName(available_component_type.title)}}</mat-icon>\n          </mat-grid-tile>\n          <mat-grid-tile colspan=\"3\">\n            <div class=\"text-inside-grid\">\n              <p>{{available_component_type.title}}</p>\n            </div>\n          </mat-grid-tile>\n        </mat-grid-list>\n      </li>\n    </ul>\n  </div>\n\n  <div *ngIf=\"audit_type\" fxFlex=\"80%\">\n    <ul class='container destination'  dragula='basket' [dragulaModel]=\"audit_type.audit_type_components\" >\n      <li *ngFor=\"let component of audit_type.audit_type_components\" class=\"dragthing\">\n        <app-audit-type-edit [audit_type_component]=component  (iHaveBeenDeleted)=\"deleteComponent(component)\"></app-audit-type-edit>\n      </li>\n    </ul>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -247,17 +252,19 @@ var AuditTypeDetailComponent = (function () {
         });
     };
     AuditTypeDetailComponent.prototype.sortByPosition = function () {
-        this.audit_type.audit_type_components = this.audit_type.audit_type_components.sort(function (a, b) {
-            if (a.position < b.position) {
-                return -1;
-            }
-            else if (a.position > b.position) {
-                return 1;
-            }
-            else {
-                return 0;
-            }
-        });
+        if (this.audit_type.audit_type_components) {
+            this.audit_type.audit_type_components = this.audit_type.audit_type_components.sort(function (a, b) {
+                if (a.position < b.position) {
+                    return -1;
+                }
+                else if (a.position > b.position) {
+                    return 1;
+                }
+                else {
+                    return 0;
+                }
+            });
+        }
     };
     AuditTypeDetailComponent.prototype.getAvailableComponents = function () {
         var _this = this;
@@ -267,7 +274,7 @@ var AuditTypeDetailComponent = (function () {
                 var type = _a[_i];
                 var newType = _this.datastore.createRecord(__WEBPACK_IMPORTED_MODULE_6__models_audit_type_component_model__["a" /* AuditTypeComponent */], {
                     title: type.title,
-                    help_text: 'know only this',
+                    help_text: 'Describe the purpose of this section',
                     position: 999,
                     audit_type: _this.audit_type,
                     available_component_type: type,
@@ -282,6 +289,15 @@ var AuditTypeDetailComponent = (function () {
     /* Update the positions of backing objects and store the changes */
     AuditTypeDetailComponent.prototype.saveChanges = function () {
         this.reorderComponents();
+    };
+    /* Called when an event, iHaveBeenDeleted, is sent from a child AuditTypeEditComponent
+     * This is a bit over complicated
+     */
+    AuditTypeDetailComponent.prototype.deleteComponent = function (doomedComponent) {
+        var index = this.audit_type.audit_type_components.indexOf(doomedComponent, 0);
+        if (index > -1) {
+            this.audit_type.audit_type_components.splice(index, 1);
+        }
     };
     AuditTypeDetailComponent.prototype.reorderComponents = function () {
         for (var item in this.audit_type.audit_type_components) {
@@ -312,9 +328,11 @@ var AuditTypeDetailComponent = (function () {
         this.removeClass(e, 'ex-moved');
     };
     AuditTypeDetailComponent.prototype.onDrop = function (args) {
-        var e = args[0], el = args[1];
-        /* Add the audit_type here ? */
-        /* Get the object first */
+        var e = args[0], el = args[1], source = args[2], thing = args[3];
+        if (source.className.includes('available_component_types')) {
+            // Refresh the list of available components !
+            this.getAvailableComponents();
+        }
         this.addClass(e, 'ex-moved');
     };
     AuditTypeDetailComponent.prototype.onOver = function (args) {
@@ -343,14 +361,14 @@ var AuditTypeDetailComponent = (function () {
 /***/ "./src/app/audit-type-edit/audit-type-edit.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ".audit_type_component_edit {\n  text-align: left;\n  padding: 0.5em;\n  color: dodgerblue;\n}\n\nform.component-form div {\n}\n\n.example-container > * {\n  width: 100%;\n}\n\n.button-row {\n}\n\nfigure.mat-figure  {\n  margin: 0;\n  padding: 0;\n}\n\n.mat-grid-tile {\n  margin: 0;\n  padding: 0;\n}\n\n/* A clunky way to left align contents of the grid */\n\n.text-inside-grid {\n  position: absolute;\n  left: 1em;\n}\n\n.alert {\n  color: red;\n}\n\n.in-edit-mode {\n  background-color: #E3F2FD;\n  padding: 1em;\n}\n"
+module.exports = ".audit_type_component_edit {\n  text-align: left;\n  padding: 0.5em;\n  color: dodgerblue;\n}\n\nform.component-form div {\n}\n\n.example-container > * {\n  width: 100%;\n}\n\n.button-row {\n}\n\nfigure.mat-figure  {\n  margin: 0;\n  padding: 0;\n}\n\n.mat-grid-tile {\n  margin: 0;\n  padding: 0;\n}\n\n/* A clunky way to left align contents of the grid */\n\n.text-inside-grid {\n  position: absolute;\n  left: 1em;\n}\n\n.alert {\n  color: red;\n}\n\n.in-edit-mode {\n  background-color: #E3F2FD;\n  padding: 1em;\n}\n\n.dirty {\n  background-color: yellow;\n}\n"
 
 /***/ }),
 
 /***/ "./src/app/audit-type-edit/audit-type-edit.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"audit_type_component_edit\" >\n\n  <mat-grid-list *ngIf=\"!inEditMode\" cols=\"10\" rowHeight=\"1.2em\">\n    <mat-grid-tile colspan=\"1\">\n      <mat-icon class=\"component-icon\">{{iconName(audit_type_component.name_of_component_type)}}</mat-icon>\n    </mat-grid-tile>\n    <mat-grid-tile colspan=\"6\">\n      <div class=\"text-inside-grid\">\n        <p>{{audit_type_component.title}}</p>\n      </div>\n    </mat-grid-tile>\n    <mat-grid-tile colspan=\"2\">\n      <button mat-icon-button *ngIf=\"!inEditMode\" (click)=\"startEditing()\">\n        <mat-icon aria-label=\"Edit this component\">edit</mat-icon>\n      </button>\n      <button mat-icon-button *ngIf=\"!inEditMode\" (click)=\"deleteComponent()\" class=\"alert\">\n        <mat-icon aria-label=\"Delete\">delete</mat-icon>\n      </button>\n    </mat-grid-tile>\n  </mat-grid-list>\n\n  <form class=\"componentForm\"  #componentForm=\"ngForm\" *ngIf=\"inEditMode\" name=\"componentForm\" class=\"component-form in-edit-mode example-container\" novalidate (ngSubmit)=\"saveComponentChanges(audit_type_component)\">\n\n    <mat-form-field>\n      <input matInput placeholder=\"Title\" value=\"{{audit_type_component.title}}\" name=\"title\" [(ngModel)]=\"audit_type_component.title\" required #name=\"ngModel\">\n      <div [hidden]=\"name.valid || name.pristine\"\n           class=\"alert alert-danger\">\n        Title is required\n      </div>\n    </mat-form-field>\n    <mat-form-field *ngIf=\"showChoices()\">\n      <input matInput placeholder=\"Choices\" value=\"{{audit_type_component.choices}}\" name=\"choices\" [(ngModel)]=\"audit_type_component.choices\">\n    </mat-form-field>\n    <mat-form-field>\n      <textarea matInput placeholder=\"Help text\" value=\"{{audit_type_component.help_text}}\"  name=\"help_text\" [(ngModel)]=\"audit_type_component.help_text\" required></textarea>\n    </mat-form-field>\n\n    <section>\n      <label>Is mandatory ? </label>\n      <mat-checkbox  name=\"is_mandatory\" [(ngModel)]=\"audit_type_component.is_mandatory\"></mat-checkbox>\n\n      <div class=\"button-row\">\n        <button type=\"submit\" mat-raised-button [disabled]=\"!componentForm.form.valid\">Save</button>\n        <button mat-raised-button (click)=\"cancel()\">Cancel</button>\n      </div>\n\n    </section>\n  </form>\n\n</div>\n"
+module.exports = "<div [ngClass]=\"{'audit_type_component_edit': true, 'dirty': audit_type_component.hasDirtyAttributes}\">\n\n  <mat-grid-list *ngIf=\"!inEditMode\" cols=\"10\" rowHeight=\"1.2em\">\n    <mat-grid-tile colspan=\"1\">\n      <mat-icon class=\"component-icon\">{{iconName(audit_type_component.name_of_component_type)}}</mat-icon>\n    </mat-grid-tile>\n    <mat-grid-tile colspan=\"6\">\n      <div class=\"text-inside-grid\">\n        <p (click)='startEditing()'>{{audit_type_component.title}}</p>\n      </div>\n    </mat-grid-tile>\n    <mat-grid-tile colspan=\"2\">\n      <button mat-icon-button *ngIf=\"!inEditMode\" (click)=\"startEditing()\">\n        <mat-icon aria-label=\"Edit this component\">edit</mat-icon>\n      </button>\n      <button mat-icon-button *ngIf=\"!inEditMode\" (click)=\"deleteComponent(audit_type_component)\" class=\"alert\">\n        <mat-icon aria-label=\"Delete\">delete</mat-icon>\n      </button>\n    </mat-grid-tile>\n  </mat-grid-list>\n\n  <form class=\"componentForm\"  #componentForm=\"ngForm\" *ngIf=\"inEditMode\" name=\"componentForm\" class=\"component-form in-edit-mode example-container\" novalidate (ngSubmit)=\"saveComponentChanges(audit_type_component)\">\n\n    <mat-form-field>\n      <input matInput placeholder=\"Title\" value=\"{{audit_type_component.title}}\" name=\"title\" [(ngModel)]=\"audit_type_component.title\" required #name=\"ngModel\">\n      <div [hidden]=\"name.valid || name.pristine\"\n           class=\"alert alert-danger\">\n        Title is required\n      </div>\n    </mat-form-field>\n    <mat-form-field *ngIf=\"showChoices()\">\n      <input matInput placeholder=\"Choices\" value=\"{{audit_type_component.choices}}\" name=\"choices\" [(ngModel)]=\"audit_type_component.choices\">\n    </mat-form-field>\n    <mat-form-field>\n      <textarea matInput placeholder=\"Help text\" value=\"{{audit_type_component.help_text}}\"  name=\"help_text\" [(ngModel)]=\"audit_type_component.help_text\" required></textarea>\n    </mat-form-field>\n\n    <section>\n      <label>Is mandatory ? </label>\n      <mat-checkbox  name=\"is_mandatory\" [(ngModel)]=\"audit_type_component.is_mandatory\"></mat-checkbox>\n\n      <div class=\"button-row\">\n        <button mat-raised-button (click)=\"cancel()\">Cancel</button>\n      </div>\n    </section>\n  </form>\n\n</div>\n"
 
 /***/ }),
 
@@ -359,8 +377,9 @@ module.exports = "<div class=\"audit_type_component_edit\" >\n\n  <mat-grid-list
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuditTypeEditComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_audit_type_component_model__ = __webpack_require__("./src/models/audit_type_component.model.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__services_datastore__ = __webpack_require__("./src/services/datastore.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_audit_type_component_model__ = __webpack_require__("./src/models/audit_type_component.model.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -372,8 +391,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var AuditTypeEditComponent = (function () {
-    function AuditTypeEditComponent() {
+    function AuditTypeEditComponent(datastore) {
+        this.datastore = datastore;
+        /* This might be too complicated, its a way to tell the parent AuditTypeDetailComponent
+         * that this AuditTypeEditComponent has been deleted.
+         * It would be simpler if the delete button was in the parent list
+         * */
+        this.iHaveBeenDeleted = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["EventEmitter"]();
     }
     AuditTypeEditComponent.prototype.ngOnInit = function () {
         if (typeof (this.audit_type_component.help_text) === 'undefined') {
@@ -389,8 +415,14 @@ var AuditTypeEditComponent = (function () {
     AuditTypeEditComponent.prototype.cancel = function () {
         this.inEditMode = false;
     };
-    AuditTypeEditComponent.prototype.deleteComponent = function () {
-        console.log('Would delete component');
+    AuditTypeEditComponent.prototype.deleteComponent = function (doomedComponent) {
+        var _this = this;
+        this.datastore.deleteRecord(__WEBPACK_IMPORTED_MODULE_2__models_audit_type_component_model__["a" /* AuditTypeComponent */], doomedComponent.id).subscribe(function () {
+            /* Generate a message to the parent AuditTypeEditComponent */
+            _this.iHaveBeenDeleted.next();
+        }, function (result) {
+            alert('Failed to delete an AuditTypeComponent');
+        });
     };
     AuditTypeEditComponent.prototype.iconName = function (name) {
         switch (name) {
@@ -432,15 +464,19 @@ var AuditTypeEditComponent = (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Input"])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__models_audit_type_component_model__["a" /* AuditTypeComponent */])
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__models_audit_type_component_model__["a" /* AuditTypeComponent */])
     ], AuditTypeEditComponent.prototype, "audit_type_component", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Output"])(),
+        __metadata("design:type", Object)
+    ], AuditTypeEditComponent.prototype, "iHaveBeenDeleted", void 0);
     AuditTypeEditComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
             selector: 'app-audit-type-edit',
             template: __webpack_require__("./src/app/audit-type-edit/audit-type-edit.component.html"),
             styles: [__webpack_require__("./src/app/audit-type-edit/audit-type-edit.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__services_datastore__["a" /* Datastore */]])
     ], AuditTypeEditComponent);
     return AuditTypeEditComponent;
 }());
@@ -459,7 +495,7 @@ module.exports = "ul, ul li {\n  font-size: 100%;\n  color: red;\n}\n\nh2 {\n  t
 /***/ "./src/app/audit-type-list/audit-type-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2>\n  Check List designs\n</h2>\n\n<mat-list>\n  <mat-list-item *ngFor=\"let audit_type of audit_types\" >\n    <button mat-button routerLink=\"/audit_type/{{audit_type.id}}\">{{audit_type.title}}</button>\n  </mat-list-item>\n</mat-list>\n\n<router-outlet></router-outlet>\n\n\n\n\n\n"
+module.exports = "<mat-grid-list cols=\"10\">\n  <mat-grid-tile colspan=\"4\">\n    <h2>\n      Check List designs\n    </h2>\n  </mat-grid-tile>\n  <mat-grid-tile colspan=\"4\">\n    <div class=\"button-row\">\n      <button mat-raised-button color=\"accent\" routerLink=\"/audit_types/new\">Add</button>\n    </div>\n  </mat-grid-tile>\n</mat-grid-list>\n\n<mat-list>\n  <mat-list-item *ngFor=\"let audit_type of audit_types\" >\n    <button mat-button routerLink=\"/audit_type/{{audit_type.id}}\">{{audit_type.title}}</button>\n  </mat-list-item>\n</mat-list>\n\n<router-outlet></router-outlet>\n\n\n\n\n\n"
 
 /***/ }),
 
@@ -516,28 +552,31 @@ var AuditTypeListComponent = (function () {
 
 /***/ }),
 
-/***/ "./src/app/available-components/available-components.component.css":
+/***/ "./src/app/audit-type-new/audit-type-new.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ".gu-mirror {\n  position: fixed !important;\n  margin: 0 !important;\n  z-index: 9999 !important;\n  opacity: 0.8;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)\";\n  filter: alpha(opacity=80);\n}\n.gu-hide {\n  display: none !important;\n}\n.gu-unselectable {\n  -webkit-user-select: none !important;\n  -moz-user-select: none !important;\n  -ms-user-select: none !important;\n  user-select: none !important;\n}\n.gu-transit {\n  opacity: 0.2;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)\";\n  filter: alpha(opacity=20);\n}\n.available_component_types {\n  text-align: left;\n  height: 3em;\n}\n"
+module.exports = ""
 
 /***/ }),
 
-/***/ "./src/app/available-components/available-components.component.html":
+/***/ "./src/app/audit-type-new/audit-type-new.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <div class='wrapper'>\n    <div class='container available_component_types' dragula='\"basket\"'>\n      <div *ngFor=\"let available_component_type of available_component_types\">\n        <h3>{{available_component_type.title}}</h3>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<h2>\n  New Audit Type\n</h2>\n\n<form class=\"auditTypeForm\"  #componentForm=\"ngForm\"  name=\"auditTypeForm\" class=\"component-form\" novalidate (ngSubmit)=\"saveChanges()\">\n\n  <mat-form-field>\n    <input matInput placeholder=\"Title\" value=\"{{title}}\" name=\"title\" [(ngModel)]=\"title\" required #name=\"ngModel\">\n    <div [hidden]=\"name.valid || name.pristine\"\n         class=\"alert alert-danger\">\n      Title is required\n    </div>\n  </mat-form-field>\n\n  <section>\n\n    <div class=\"button-row\">\n      <button type=\"submit\" mat-raised-button [disabled]=\"!componentForm.form.valid\">Save</button>\n      <button type=\"button\" mat-raised-button  routerLink=\"/\">Cancel</button>\n    </div>\n  </section>\n</form>\n"
 
 /***/ }),
 
-/***/ "./src/app/available-components/available-components.component.ts":
+/***/ "./src/app/audit-type-new/audit-type-new.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AvailableComponentsComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuditTypeNewComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_available_component_type_model__ = __webpack_require__("./src/models/available_component_type.model.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_datastore__ = __webpack_require__("./src/services/datastore.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_datastore__ = __webpack_require__("./src/services/datastore.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_audit_type_model__ = __webpack_require__("./src/models/audit_type.model.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_available_component_type_model__ = __webpack_require__("./src/models/available_component_type.model.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_audit_type_component_model__ = __webpack_require__("./src/models/audit_type_component.model.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -550,28 +589,65 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var AvailableComponentsComponent = (function () {
-    function AvailableComponentsComponent(datastore) {
+
+
+
+var AuditTypeNewComponent = (function () {
+    function AuditTypeNewComponent(datastore, router) {
         this.datastore = datastore;
+        this.router = router;
     }
-    AvailableComponentsComponent.prototype.ngOnInit = function () {
-        this.getAvailableComponents();
+    AuditTypeNewComponent.prototype.ngOnInit = function () {
     };
-    AvailableComponentsComponent.prototype.getAvailableComponents = function () {
+    AuditTypeNewComponent.prototype.saveChanges = function () {
         var _this = this;
-        this.datastore.findAll(__WEBPACK_IMPORTED_MODULE_1__models_available_component_type_model__["a" /* AvailableComponentTypes */], {}).subscribe(function (available_component_types) {
-            _this.available_component_types = available_component_types.getModels();
+        this.datastore.createRecord(__WEBPACK_IMPORTED_MODULE_2__models_audit_type_model__["a" /* AuditType */], {
+            title: this.title
+        }).save().subscribe(function (newAuditType) {
+            console.log('Succcess saving new AuditType');
+            /* Create the first component */
+            _this.datastore.findAll(__WEBPACK_IMPORTED_MODULE_4__models_available_component_type_model__["a" /* AvailableComponentTypes */], {
+                filter: {
+                    title: 'Title',
+                },
+            }).subscribe(function (available_component_types) {
+                var newOnes = [];
+                if (available_component_types) {
+                    var availableTypes = available_component_types.getModels();
+                    var titleType = availableTypes[0];
+                    var newType = _this.datastore.createRecord(__WEBPACK_IMPORTED_MODULE_5__models_audit_type_component_model__["a" /* AuditTypeComponent */], {
+                        title: titleType.title,
+                        help_text: 'Add a title',
+                        position: 999,
+                        audit_type: newAuditType,
+                        available_component_type: titleType,
+                        name_of_component_type: titleType.title
+                    });
+                    newType.save().subscribe(function (result) {
+                        _this.router.navigate(['/']);
+                    }, function (result) {
+                        console.log('Failed to save a component for a new AuditType');
+                        _this.router.navigate(['/']);
+                    });
+                }
+            });
+        }, function () {
+            console.log('Failure saving new AuditType');
         });
     };
-    AvailableComponentsComponent = __decorate([
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", String)
+    ], AuditTypeNewComponent.prototype, "title", void 0);
+    AuditTypeNewComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'app-available-component-types',
-            template: __webpack_require__("./src/app/available-components/available-components.component.html"),
-            styles: [__webpack_require__("./src/app/available-components/available-components.component.css")]
+            selector: 'app-audit-type-new',
+            template: __webpack_require__("./src/app/audit-type-new/audit-type-new.component.html"),
+            styles: [__webpack_require__("./src/app/audit-type-new/audit-type-new.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_datastore__["a" /* Datastore */]])
-    ], AvailableComponentsComponent);
-    return AvailableComponentsComponent;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_datastore__["a" /* Datastore */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]])
+    ], AuditTypeNewComponent);
+    return AuditTypeNewComponent;
 }());
 
 
@@ -936,6 +1012,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var config = {
+    /* TODO: put baseUrl in an environment variable */
     baseUrl: 'http://localhost:3000/check_list_engine/api/',
     models: {
         audit_type: __WEBPACK_IMPORTED_MODULE_2__models_audit_type_model__["a" /* AuditType */],

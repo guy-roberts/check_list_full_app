@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:guy-roberts/check_list_engine.git
-  revision: cefd0cf7ba3fcce0a94cb029bfe5fd81242c3b43
+  revision: b10f8578716d1e21fca484a938fe48223172dff2
   specs:
     check_list_engine (0.1.0)
       fast_jsonapi (~> 1.0.17)
@@ -101,7 +101,7 @@ GEM
     nio4r (2.3.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
-    oj (3.5.0)
+    oj (3.5.1)
     pg (0.21.0)
     puma (3.11.3)
     rack (2.0.4)
