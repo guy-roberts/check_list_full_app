@@ -28,7 +28,7 @@ gem 'kaminari', '~> 1.1.1'
 
 gem 'jsonapi-utils', '~> 0.7.0'
 
-gem 'check_list_engine', :git => 'git@github.com:guy-roberts/check_list_engine.git'
+gem 'check_list_engine', :git => 'https://github.com/guy-roberts/check_list_engine.git'
 
 # TODO Remove these, they are temporary, because a rake task in the engine uses them
 gem 'factory_bot', '~> 4.8.2'

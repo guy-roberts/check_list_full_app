@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:guy-roberts/check_list_engine.git
+  remote: https://github.com/guy-roberts/check_list_engine.git
   revision: 414c53f7152da9b409503cad896e89dcdc861868
   specs:
     check_list_engine (0.1.0)
