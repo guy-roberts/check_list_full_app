@@ -1013,7 +1013,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var config = {
     /* TODO: put baseUrl in an environment variable */
-    baseUrl: 'http://localhost:3000/check_list_engine/api/',
+    baseUrl: 'https://check-lists.herokuapp.com/check_list_engine/api/',
     models: {
         audit_type: __WEBPACK_IMPORTED_MODULE_2__models_audit_type_model__["a" /* AuditType */],
         audit_type_components: __WEBPACK_IMPORTED_MODULE_3__models_audit_type_component_model__["a" /* AuditTypeComponent */],
